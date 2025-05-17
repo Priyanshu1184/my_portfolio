@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(0, 109, 119, 0.7),
-    rgba(0, 109, 119, 0.9)
+    #FFEFBA,
+    #FFFFFF
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(0, 109, 119, 0.7),
-    rgba(0, 109, 119, 0.9)
+    rgba(255, 239, 186, 0.8),
+    rgba(255, 255, 255, 0.9)
   );
 
-  --imp-text-color: #83C5BE;
+  --imp-text-color: #FF5722;
 }
 
 .purple {
@@ -32,7 +32,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #006D77;
+  background-color: #FFFFFF;
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +57,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #006D77;
+  background: #FFEFBA;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(131, 197, 190, 0.8);
+  background: rgba(255, 87, 34, 0.8);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(131, 197, 190, 1);
+  background: #FF5722;
   border-radius: 12px;
 }
 
@@ -76,9 +76,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: rgba(0, 109, 119, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(0, 109, 119, 0.3) !important;
+  box-shadow: 0px 10px 10px 0px rgba(255, 239, 186, 0.3) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +97,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #83C5BE !important;
+  background-color: #FF5722 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,14 +144,14 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #006D77 !important;
+    background-color: #FFFFFF !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: #EDF6F9 !important;
+  color: #333333 !important;
 }
 
 .logo {
@@ -160,7 +160,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: #EDF6F9 !important;
+  color: #333333 !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -194,7 +194,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #83C5BE;
+  background: #FF5722;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -266,7 +266,7 @@ button:focus {
 
 .home-content {
   padding: 9rem 0 2rem !important;
-  color: #EDF6F9;
+  color: #333333;
   text-align: left;
 }
 
@@ -281,17 +281,17 @@ button:focus {
 }
 
 .main-name {
-  color: #83C5BE;
+  color: #FF5722;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #83C5BE !important;
+  color: #FF5722 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #83C5BE !important;
+  color: #FF5722 !important;
 }
 
 @media (max-width: 767px) {
@@ -324,7 +324,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: #EDF6F9 !important;
+  color: #333333 !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -339,7 +339,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: #EDF6F9 !important;
+  color: #333333 !important;
 }
 
 .home-about-social-links {
@@ -358,7 +358,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(237, 246, 249, 0.9) !important;
+  background: rgba(255, 87, 34, 0.1) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -371,7 +371,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #006D77;
+  background: #FFFFFF;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -379,13 +379,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #83C5BE;
+  box-shadow: 0 0 15px #FF5722;
 }
 
 .home-social-icons:hover {
-  color: #006D77;
-  box-shadow: 0 0 5px #83C5BE;
-  text-shadow: 0 0 2px #83C5BE;
+  color: #FF5722;
+  box-shadow: 0 0 5px #FF5722;
+  text-shadow: 0 0 2px #FF5722;
 }
 
 .social-icons {
@@ -395,14 +395,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #006D77 !important;
+  color: #FF5722 !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: #006D77;
+  background-color: #FFFFFF;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -428,7 +428,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: #EDF6F9 !important;
+  color: #333333 !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -439,7 +439,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #83C5BE !important;
+  color: #FF5722 !important;
 }
 /* --------- */
 /* Projects */
@@ -460,9 +460,9 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(131, 197, 190, 0.3) !important;
-  color: #EDF6F9 !important;
-  background-color: transparent !important;
+  box-shadow: 0 4px 5px 3px rgba(255, 87, 34, 0.2) !important;
+  color: #333333 !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -470,7 +470,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(131, 197, 190, 0.4) !important;
+  box-shadow: 0 4px 4px 5px rgba(255, 87, 34, 0.3) !important;
 }
 
 .blog-card {
@@ -482,15 +482,15 @@ button:focus {
 }
 
 .blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(131, 197, 190, 0.3) !important;
-  color: #EDF6F9 !important;
+  box-shadow: 0 3px 3px 2px rgba(255, 87, 34, 0.2) !important;
+  color: #333333 !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
 .blog-link {
-  color: #EDF6F9 !important;
+  color: #333333 !important;
   text-decoration: none !important;
 }
 
@@ -501,7 +501,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(131, 197, 190, 0.4) !important;
+  box-shadow: 0 3px 3px 5px rgba(255, 87, 34, 0.3) !important;
 }
 
 .card-img-top {
@@ -517,22 +517,22 @@ button:focus {
 }
 
 .btn-primary {
-  color: #006D77 !important;
-  background-color: #83C5BE !important;
-  border-color: #83C5BE !important;
+  color: #FFFFFF !important;
+  background-color: #FF5722 !important;
+  border-color: #FF5722 !important;
 }
 
 .btn-primary:hover {
-  color: #006D77 !important;
-  background-color: rgba(131, 197, 190, 0.8) !important;
-  border-color: rgba(131, 197, 190, 0.8) !important;
+  color: #FFFFFF !important;
+  background-color: rgba(255, 87, 34, 0.8) !important;
+  border-color: rgba(255, 87, 34, 0.8) !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: #EDF6F9 !important;
+  color: #333333 !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -547,7 +547,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: #EDF6F9 !important;
+  color: #333333 !important;
 }
 
 .tech-icons {
@@ -555,14 +555,15 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(131, 197, 190, 0.7) !important;
+  border: 1.7px solid rgba(255, 87, 34, 0.7) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(131, 197, 190, 0.2) !important;
+  box-shadow: 4px 5px 4px 3px rgba(255, 87, 34, 0.2) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 @media (max-width: 767px) {
@@ -574,7 +575,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(131, 197, 190, 0.9) !important;
+  border: 2.2px solid rgba(255, 87, 34, 0.9) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -583,8 +584,8 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: #EDF6F9 !important;
-  background-color: transparent !important;
+  color: #333333 !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .about-activity {
@@ -607,7 +608,7 @@ button:focus {
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: #EDF6F9 !important;
+  color: #333333 !important;
 }
 
 .resume {
@@ -645,18 +646,19 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #83C5BE;
+  border-left: 2px solid #FF5722;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: rgba(0, 109, 119, 0.7);
+  background: rgba(255, 87, 34, 0.1);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #333333;
 }
 
 .resume .resume-item ul {
@@ -681,8 +683,8 @@ button:focus {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #006D77;
-  border: 2px solid #83C5BE;
+  background: #FFFFFF;
+  border: 2px solid #FF5722;
 }
 
 .like-item {
@@ -692,8 +694,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: rgba(131, 197, 190, 0.4) !important;
-  border-color: rgba(131, 197, 190, 0.4) !important;
+  background-color: rgba(255, 87, 34, 0.4) !important;
+  border-color: rgba(255, 87, 34, 0.4) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -702,8 +704,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: rgba(131, 197, 190, 0.6) !important;
-  border-color: rgba(131, 197, 190, 0.6) !important;
+  background-color: rgba(255, 87, 34, 0.6) !important;
+  border-color: rgba(255, 87, 34, 0.6) !important;
 }
 
 .animate-like {
@@ -727,7 +729,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: rgba(131, 197, 190, 0.4) !important;
+  background-color: rgba(255, 87, 34, 0.4) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,8 +737,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: rgba(131, 197, 190, 0.6) !important;
-  border-color: rgba(131, 197, 190, 0.6) !important;
+  background-color: rgba(255, 87, 34, 0.6) !important;
+  border-color: rgba(255, 87, 34, 0.6) !important;
 }
 .fork-btn-inner::after {
   display: none !important;

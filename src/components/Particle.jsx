@@ -15,7 +15,7 @@ function Particle() {
             },
           },
           color: {
-            value: "#83C5BE"
+            value: "#FF5722"
           },
           line_linked: {
             enable: false,
@@ -55,4 +55,4 @@ function Particle() {
   );
 }
 
-export default Particle;
+export default Particle; 

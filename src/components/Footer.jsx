@@ -24,7 +24,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://github.com/priyanshu1184"
-                style={{ color: "#EDF6F9" }}
+                style={{ color: "#333333" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -34,7 +34,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://twitter.com/sahoo1184"
-                style={{ color: "#EDF6F9" }}
+                style={{ color: "#333333" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -44,7 +44,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/priyanshu-sahoo1184/"
-                style={{ color: "#EDF6F9" }}
+                style={{ color: "#333333" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -54,7 +54,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.instagram.com/priyanshu_1184"
-                style={{ color: "#EDF6F9" }}
+                style={{ color: "#333333" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
@@ -68,4 +68,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer; 
