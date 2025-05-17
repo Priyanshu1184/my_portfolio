@@ -15,7 +15,7 @@ function Particle() {
             },
           },
           color: {
-            value: "#FF5722"
+            value: "#888888"
           },
           line_linked: {
             enable: false,
