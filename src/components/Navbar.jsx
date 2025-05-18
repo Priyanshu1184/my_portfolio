@@ -94,9 +94,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="#"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/contact"
+                onClick={() => updateExpanded(false)}
               >
                 <ImBlog style={{ marginBottom: "2px" }} /> Contact Me
               </Nav.Link>
@@ -104,7 +104,7 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/priyanshu1184/Portfolio"
+                href="https://github.com/Priyanshu1184/my_portfolio"
                 target="_blank"
                 className="fork-btn-inner"
               >

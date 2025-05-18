@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from 'emailjs-com';
 import "./Contact.css";
+import { CgLayoutGrid } from "react-icons/cg";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -22,11 +23,13 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     
+    const currentTime = new Date().toLocaleString();
+
     emailjs.send(
-      'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+      'service_5lxxztj', // Replace with your EmailJS service ID
+      'template_lkn6btd', // Replace with your EmailJS template ID
       formData,
-      'YOUR_USER_ID' // Replace with your EmailJS user ID
+      '-8OATLbBJXpW2y8KE' // Replace with your EmailJS user ID
     )
     .then((response) => {
       setStatus("SUCCESS");
@@ -34,9 +37,11 @@ function Contact() {
         name: "",
         email: "",
         message: "",
+        time: currentTime,
       });
       setTimeout(() => setStatus(""), 3000);
     }, (error) => {
+      console.log("Error sending email:", error);
       setStatus("ERROR");
       setTimeout(() => setStatus(""), 3000);
     });
@@ -94,17 +99,11 @@ function Contact() {
           <Col md={6} className="contact-info">
             <div className="info-item">
               <h3>Email</h3>
-              <p>your.email@example.com</p>
+              <p>sahoo.priyanshu184@gmail.com</p>
             </div>
             <div className="info-item">
               <h3>Location</h3>
-              <p>Your Location</p>
-            </div>
-            <div className="info-item">
-              <h3>Social</h3>
-              <div className="social-links">
-                {/* Add your social media links here */}
-              </div>
+              <p>Durg, Chhattisgarh</p>
             </div>
           </Col>
         </Row>
