@@ -26,10 +26,10 @@ function Contact() {
     const currentTime = new Date().toLocaleString();
 
     emailjs.send(
-      'service_5lxxztj', // Replace with your EmailJS service ID
-      'template_lkn6btd', // Replace with your EmailJS template ID
+      process.env.service_ID, // Replace with your EmailJS service ID
+      process.env.template_ID, // Replace with your EmailJS template ID
       formData,
-      '-8OATLbBJXpW2y8KE' // Replace with your EmailJS user ID
+      process.env.user_ID // Replace with your EmailJS user ID
     )
     .then((response) => {
       setStatus("SUCCESS");

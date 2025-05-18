@@ -1,17 +1,19 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
+# Node modules
 /node_modules
+/Server/node_modules
+
+# Build output
+/build
+/dist
+
+# Dependency directories
 /.pnp
 .pnp.js
 
-# testing
+# Testing
 /coverage
 
-# production
-/build
-
-# misc
+# Misc
 .DS_Store
 .env
 .env.local
@@ -25,5 +27,5 @@ yarn-error.log*
 
 .eslintcache
 
-Server/node_modules
+# Server-side sensitive files
 Server/config.js
