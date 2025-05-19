@@ -1,21 +1,20 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
+  DiHtml5,
+  DiCss3,
   DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
   SiC,
-  SiRedis,
-  SiFirebase,
   SiNextdotjs,
-  SiSolidity,
   SiPostgresql,
+  SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -24,6 +23,12 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <SiC  />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiCss3 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
@@ -41,10 +46,10 @@ function Techstack() {
         <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <SiTailwindcss />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />

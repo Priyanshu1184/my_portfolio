@@ -3,38 +3,76 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import Carousel from "react-multi-carousel";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 function ProjectCards(props) {
+  const CustomButtonGroup = ({ next, previous }) => {
+    return (
+      <div className="carousel-button-group">
+        <button className="carousel-control-prev" onClick={() => previous()}>
+          <BsArrowLeftCircleFill />
+        </button>
+        <button className="carousel-control-next" onClick={() => next()}>
+          <BsArrowRightCircleFill />
+        </button>
+      </div>
+    );
+  };
+
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <div className="project-image-container">
+        <Carousel
+          responsive={props.imageResponsive}
+          infinite={true}
+          customButtonGroup={<CustomButtonGroup />}
+          arrows={false}
+          renderButtonGroupOutside={true}
+          className="project-image-carousel"
+        >
+          {props.images.map((img, index) => (
+            <Card.Img
+              key={index}
+              variant="top"
+              src={img}
+              alt={`${props.title}-${index + 1}`}
+              className="project-image"
+            />
+          ))}
+        </Carousel>
+      </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
+        <div className="project-card-buttons">
           <Button
             variant="primary"
-            href={props.demoLink}
+            href={props.ghLink}
             target="_blank"
-            style={{ marginLeft: "10px" }}
+            className="project-button"
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
           </Button>
-        )}
+
+          {!props.isBlog && props.demoLink && (
+            <Button
+              variant="primary"
+              href={props.demoLink}
+              target="_blank"
+              className="project-button"
+            >
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
 }
+
 export default ProjectCards;

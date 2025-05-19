@@ -17,7 +17,6 @@ function About() {
             md={7}
             style={{
               justifyContent: "center",
-              paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >
@@ -45,7 +44,7 @@ function About() {
         </h1>
         <Toolstack />
 
-        <Github />
+        {/* <Github /> */}
       </Container>
     </Container>
   );

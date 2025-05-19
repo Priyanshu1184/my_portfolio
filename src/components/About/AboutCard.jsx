@@ -1,37 +1,36 @@
 import React from "react";
-import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Priyanshu Sahoo </span>
-            from <span className="purple"> Chhattishgarh, India.</span>
-            <br />
-            I'm a final-year B.Tech CSE student at Bhilai Institute of Technology, Durg
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
-          </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
+    <blockquote className="about-blockquote">
+      <p style={{ textAlign: "justify" }}>
+        Hey! I'm <span className="purple">Priyanshu Sahoo</span> — a
+        <span className="purple">Full Stack Web Developer </span> who’s excited about building cool stuff with the MERN stack ⚙️. 
+        I’ve worked on awesome projects like an e-commerce website 🛒, an HR management system 🧑‍💼, and MyCab 🚕 — a real-time ride-booking website.
+      </p>
+      <p style={{ textAlign: "justify" }}>
+        When I'm not coding,  I’m usually:
+      </p>
+      <ul>
+        <li className="about-activity">
+          <ImPointRight /> 🎮 Gaming
+        </li>
+        <li className="about-activity">
+          <ImPointRight /> ✈️ Traveling and exploring new places
+        </li>
+        <li className="about-activity">
+          <ImPointRight /> 🎧 Vibing to music
+        </li>
+        <li className="about-activity">
+          <ImPointRight /> 💡 Dreaming up new project ideas
+        </li>
+      </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Priyanshu</footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
+      <p className="about-quote">
+        Always learning. Always building. 🚀
+      </p>
+    </blockquote>
   );
 }
 

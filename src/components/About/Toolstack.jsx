@@ -1,5 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { DiGithubBadge } from "react-icons/di";
 import {
   SiVisualstudiocode,
   SiPostman,
@@ -8,7 +9,9 @@ import {
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGithubBadge />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
