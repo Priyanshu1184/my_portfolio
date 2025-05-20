@@ -12,7 +12,6 @@ import {
 } from "react-icons/di";
 import {
   SiC,
-  SiNextdotjs,
   SiPostgresql,
   SiTailwindcss,
 } from "react-icons/si";
@@ -41,9 +40,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
-      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <SiTailwindcss />
       </Col>
