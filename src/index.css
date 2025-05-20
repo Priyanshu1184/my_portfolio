@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: "Oxanium", sans-serif !important;
+  background-color: #E5E7EB !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(to left, #0D0D0D, #1A1A1A);
   font-size: 40px;
 }
 

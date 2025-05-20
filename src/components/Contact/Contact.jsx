@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import emailjs from 'emailjs-com';
 import "./Contact.css";
-import { CgLayoutGrid } from "react-icons/cg";
+import {
+  AiFillGithub,
+  AiOutlineTwitter,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -104,6 +109,53 @@ function Contact() {
             <div className="info-item">
               <h3>Location</h3>
               <p>Durg, Chhattisgarh</p>
+            </div>
+            <div className="home-about-social" style={{ marginTop: '32px' }}>
+              <p>
+                Feel free to <span className="purple">connect </span>with me
+              </p>
+              <ul className="home-about-social-links">
+                <li className="social-icons">
+                  <a
+                    href="https://github.com/priyanshu1184"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <AiFillGithub />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://twitter.com/sahoo1184"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <AiOutlineTwitter />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://www.linkedin.com/in/priyanshu-sahoo1184/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <FaLinkedinIn />
+                  </a>
+                </li>
+                <li className="social-icons">
+                  <a
+                    href="https://www.instagram.com/priyanshu_1184"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icon-colour home-social-icons"
+                  >
+                    <AiFillInstagram />
+                  </a>
+                </li>
+              </ul>
             </div>
           </Col>
         </Row>

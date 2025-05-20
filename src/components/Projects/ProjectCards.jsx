@@ -9,7 +9,8 @@ import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 function ProjectCards(props) {
   const CustomButtonGroup = ({ next, previous }) => {
     return (
-      <div className="carousel-button-group">
+      <div className="carousel-button-group" 
+          style={{gap:"4"}}>
         <button className="carousel-control-prev" onClick={() => previous()}>
           <BsArrowLeftCircleFill />
         </button>

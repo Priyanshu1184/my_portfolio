@@ -1,69 +1,22 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { Container } from "react-bootstrap";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Priyanshu Sahoo</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} </h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
-              <a
-                href="https://github.com/priyanshu1184"
-                style={{ color: "#333333" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://twitter.com/sahoo1184"
-                style={{ color: "#333333" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/priyanshu-sahoo1184/"
-                style={{ color: "#333333" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/priyanshu_1184"
-                style={{ color: "#333333" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
+    <Container fluid className="footer" style={{
+      padding: '10px 0 6px 0',
+      borderTop: '1px solid #e5e7eb',
+      textAlign: 'center',
+      fontSize: '0.95em',
+      color: '#475569',
+      letterSpacing: '0.02em',
+      background: 'transparent',
+    }}>
+      <span>
+        © {year} &nbsp;|&nbsp; Designed &amp; Developed by Priyanshu Sahoo
+      </span>
     </Container>
   );
 }
