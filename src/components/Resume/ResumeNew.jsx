@@ -5,7 +5,9 @@ import Particle from "../Particle";
 import pdf from "../../Assets/../Assets/Priyanshu-Sahoo-Resume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/TextLayer.css";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
@@ -13,6 +15,7 @@ function ResumeNew() {
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    console.log("ResumeNew rendered");
   }, []);
 
   return (
@@ -37,17 +40,7 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download CV
-          </Button>
-        </Row>
+        
       </Container>
     </div>
   );
