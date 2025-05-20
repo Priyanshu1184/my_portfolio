@@ -1,5 +1,7 @@
 # Portfolio Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7719d1bd-4bc4-4148-9221-7d0f80e9560e/deploy-status)](https://app.netlify.com/sites/myportfolioxpriyanshu/deploys)
+
 This is a personal portfolio website built with React. It showcases your projects, skills, resume, and provides a contact form for visitors to reach out.
 
 ## Features
