@@ -314,6 +314,10 @@ button:focus {
     text-align: left !important;
     margin-left: 0 !important;
   }
+  .heading {
+    padding-top: 30px !important;
+  }
+
   .myAvtar {
     display: flex !important;
     justify-content: center !important;
