@@ -22,7 +22,8 @@ function ResumeNew() {
     <div>
       <Container fluid className="resume-section">
         <Particle />
-        <Row style={{ justifyContent: "center", position: "relative", marginBottom: "30px" }}>
+        <div className="resume-header">
+          <h1 className="resume-title">Resume</h1>
           <Button
             variant="primary"
             href={pdf}
@@ -34,7 +35,8 @@ function ResumeNew() {
               backgroundColor: "#10B981",
               borderColor: "#10B981",
               boxShadow: "0 4px 6px rgba(16, 185, 129, 0.2)",
-              transition: "all 0.3s ease"
+              transition: "all 0.3s ease",
+              margin: "20px auto"
             }}
             onMouseOver={(e) => {
               e.currentTarget.style.backgroundColor = "#059669";
@@ -50,7 +52,7 @@ function ResumeNew() {
             <AiOutlineDownload style={{ marginRight: "8px", fontSize: "1.2em" }} />
             Download Resume
           </Button>
-        </Row>
+        </div>
 
         <Row className="resume">
           <Document file={pdf} className="d-flex justify-content-center">

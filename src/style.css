@@ -781,14 +781,27 @@ button:focus {
 
 .resume-section {
   position: relative !important;
-  padding-top: 110px !important;
+  padding-top: 140px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: #0F172A !important;
 }
 
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.resume-header .resume-title {
+  font-size: 2.5em;
+  color: #0F172A;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
 .resume {
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 50px;
   justify-content: center;
 }
@@ -813,13 +826,22 @@ button:focus {
   }
   
   .resume-section {
-    padding-top: 140px !important;
+    padding-top: 100px !important;
     padding-bottom: 20px !important;
   }
   
+  .resume-header {
+    margin-bottom: 20px;
+  }
+  
+  .resume-header .resume-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  
   .resume {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
   }
   
   .resume .resume-title {
@@ -863,13 +885,22 @@ button:focus {
 
 @media (max-width: 480px) {
   .resume-section {
-    padding-top: 40px !important;
+    padding-top: 80px !important;
     padding-bottom: 15px !important;
   }
   
+  .resume-header {
+    margin-bottom: 15px;
+  }
+  
+  .resume-header .resume-title {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+  }
+  
   .resume {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   
   .resume .resume-title {
