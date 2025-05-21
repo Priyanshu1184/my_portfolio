@@ -299,25 +299,47 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
+  .home-content .row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
   }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
+  .home-header {
+    width: 100% !important;
     padding-top: 2em !important;
-    padding-bottom: 2em !important;
+    padding-bottom: 1em !important;
+      margin-left: 18px !important;
+    padding-top: 32px !important;
+  }
+  .heading, .heading-name, .Typewriter__wrapper {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .myAvtar {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    padding-top: 0.5em !important;
+    padding-bottom: 1.5em !important;
+  }
+  .img-fluid {
+    max-height: 340px !important;
+    width: auto !important;
+    margin: 0 auto !important;
+    display: block !important;
+  }
+  .typewriter-container {
+    padding: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    margin-left: 10px !important;
+    padding-top: 24px !important;
+  }
+  .img-fluid {
+    max-height: 270px !important;
   }
 }
 
@@ -1157,7 +1179,7 @@ button:focus {
   }
   
   .home-content {
-    padding: 5rem 0 2rem !important;
+    padding: 3rem 0 2rem !important;
   }
   
   .hire-links {
@@ -1245,7 +1267,7 @@ button:focus {
   }
   
   .home-content {
-    padding: 5rem 0 2rem !important;
+    padding: 3rem 0 2rem !important;
   }
   
   .hire-links {
