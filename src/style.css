@@ -811,7 +811,106 @@ button:focus {
     padding-right: 15px !important;
     padding-left: 15px !important;
   }
+  
+  .resume-section {
+    padding-top: 140px !important;
+    padding-bottom: 20px !important;
+  }
+  
+  .resume {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .resume .resume-title {
+    font-size: 1.4em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 8px 20px;
+  }
+  
+  .resume .resume-item .resume-title {
+    font-size: 0.85em;
+    padding: 6px 12px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 15px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 8px;
+    font-size: 0.95em;
+  }
+
+  .heading {
+    font-size: 1.8em !important;
+    padding-left: 20px !important;
+  }
+
+  .heading-name {
+    font-size: 1.9em !important;
+    padding-left: 20px !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.2em !important;
+  }
 }
+
+@media (max-width: 480px) {
+  .resume-section {
+    padding-top: 40px !important;
+    padding-bottom: 15px !important;
+  }
+  
+  .resume {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .resume .resume-title {
+    font-size: 1.2em;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 6px 15px;
+  }
+  
+  .resume .resume-item .resume-title {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+  
+  .resume .resume-item ul {
+    padding-left: 12px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 6px;
+    font-size: 0.9em;
+  }
+
+  .heading {
+    font-size: 1.5em !important;
+    padding-left: 15px !important;
+  }
+
+  .heading-name {
+    font-size: 1.6em !important;
+    padding-left: 15px !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.1em !important;
+  }
+}
+
 .resume .resume-title {
   font-size: 2em;
   font-weight: 700;
